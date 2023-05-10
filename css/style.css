@@ -1,0 +1,854 @@
+
+body{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content{
+    display: none;
+}
+
+.box-load{
+   width: 100%;
+   height: 100vh;
+   background-color: rgb(0, 0, 0);
+
+   position: absolute;
+
+   display: flex;
+   justify-content: center;
+   align-items: center  ;
+
+   color: white;
+
+   flex-direction: column;
+
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 100;
+
+}
+
+@keyframes load{
+    0%{
+        width: 100px;
+        height: 100px;
+    }
+    50%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.pre {
+    width: 100px;
+    height: 100px;
+    background-color: #40e0d0;
+    border-radius: 50px;
+
+    animation: load 2.5s infinite linear;   
+}
+
+/* Header */
+header{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.header{
+    height: 88px;
+    background-color: #e8e9e9;
+}
+.wrapper{
+    width: 100%;
+    display: flex;    
+    background-color: white;
+}
+.logo{
+    position: absolute;
+}
+.logo img{
+    width: 80px;
+    padding-top:5px;
+    margin-top: 4.5px;
+}
+
+
+/* Header menu */
+.menu{
+    width: 70%;
+    display: inline-block;
+    text-align: center;
+}
+
+
+#menu-mobile{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    position: absolute;
+    right: 20px;
+    top:20px;
+    color: white;
+    
+    display: none;
+
+    z-index: 9999;
+}
+#menu-mobile img{
+    width: 40px;
+    cursor: pointer;
+}
+#menu-mobile-width{
+    display: none;
+}
+
+#fechar{
+    display: none;
+}
+
+
+.menu nav ul{
+    list-style-type: none;
+}
+
+.menu a{
+    text-decoration: none;
+}
+
+.menu li {
+    color:rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 500;
+
+    display: inline-block;
+
+    margin-left: 30px;
+    margin-top: 25px;
+
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu li:hover{
+    background-color: silver;
+    border-radius: 5px;
+    color:#ffffff;
+}
+
+
+
+
+/*  Contato Fixo na lateral direito na borda de baixo  */
+#contato-fixo{
+    width: 100%;
+    position: fixed;
+    margin-top: calc(100vh - 185px);
+}
+
+#contato-fixo .center{
+    text-align: right;
+}
+
+
+#contato-fixo img{
+    margin-right: 20px;
+    cursor: pointer;
+
+    border-radius: 50%;
+    
+    animation: botao-fix 2s;
+
+    animation-iteration-count: infinite;
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes botao-fix {
+    0% {
+        width: 80px;
+    }
+    50% {
+        width: 74px;
+    }
+    100% {
+        width: 80px;
+    }
+}
+
+
+
+/*  Contatos h2 e p Fixo na lateral direito na borda de baixo  */
+
+#contato-fixo-contatos{
+    width: 100%;
+    position: fixed;
+    margin-top: calc(100vh - 185px);
+    
+    z-index:99;
+    display: none;
+}
+
+
+#contato-fixo-contatos .info-contatos-fixo{
+    width: 94%;
+    height: 60px;
+    padding: 2px;
+    background-color: #40e0d0;
+
+    border-radius: 30px;
+    margin-left: 10px;
+    animation: botao-fixo-c 0.8s;
+
+    color:white;
+}
+
+@keyframes botao-fixo-c {
+    0% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #40e0d0;
+    }
+}
+
+.info-contatos-fixo a img{
+    width: 60px;
+    cursor: pointer;
+}
+
+.info-contatos-fixo, .whats{
+    width: 10px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.whats h2{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.info-contatos-fixo, .email{
+    width: 10px;
+    display: flex;
+    margin-left: 200px;
+}
+.email a{
+    text-decoration: none;
+    color:white
+}
+.email h2{
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+
+
+.info-contatos-fixo .instagram{
+    margin-left: 160px;
+    display: flex;
+}
+
+
+.info-contatos-fixo .instagram  h2{
+    font-weight: 400;;
+    font-size:16px;
+    margin-top: 20px;
+    margin-left: 5px;
+ }
+ 
+
+
+.info-contatos-fixo .instagram img{
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.fechar{
+    width: 100%;
+    text-align: right;
+}
+.info-contatos-fixo .fechar #fecharcontato{
+    margin-top: 15px;
+    margin-right: 10px;
+
+    font-size: 18px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color:white;
+}
+
+
+/*  Banner Fundo */
+
+ .slider{
+    width: 100%;
+    max-height: 800px;
+    overflow: hidden;
+}
+
+.slider-width{
+   display: flex;
+   transition: all ease 0.5s;
+ }
+
+ .slider-item{
+    width: 100vw;
+    background-position: center;
+  }
+
+  .slider-item img{
+    width:100%;
+    height: 100%;
+  }
+
+
+  /* Slider Controles */
+
+  .slider-controls{
+    position: absolute;
+    z-index:2;
+    width: 98%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20%;
+  }
+
+  .slider-control{
+    width:40px;
+    height:40px;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .slider-control:hover{
+    background-color: rgb(37, 155, 163);
+  }
+  .slider-control img{
+    width: 30px;
+    margin: 5px 5px;
+  }
+
+  
+  /* Banner Sessao obra */
+
+  .sessao-obra{
+    width: 100%;
+  }
+
+  .sessao-obra .titulo h2{
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 50px;
+  }
+ .slider-obra{
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 20px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.slider-width-obra{
+   height: 300px;
+   display: flex;
+   transition: all ease 0.5s;
+ }
+
+ .slider-item-obra{
+    width: 100vw;
+    height: 100%;
+    background-position: center;
+  }
+
+  .slider-item-obra img{
+    width:44vw;
+    height: 100%;
+    background-position: center;
+  }
+
+  /* Slider Controles Obra*/
+
+  .slider-controls-obra{
+    position: absolute;
+    width: 88%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13%;
+    z-index: 99;
+  }
+
+  .slider-control-obra{
+    width:35px;
+    height:35px;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .slider-control-obra:hover{
+    background-color: rgb(37, 155, 163);
+  }
+  .slider-control-obra img{
+    width: 20px;
+    margin: 8px 8px;
+  }
+
+  
+   /* Banner Sessao Serviço */
+   .sessao-serviço{
+    width: 100%;
+  }
+
+  .sessao-serviço .titulo h2{
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 50px;
+  }
+ .slider-serviço{
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+
+    background-color: rgb(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 20px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.slider-width-serviço{
+   height: 100%;
+   height: 300px;
+   display: flex;
+   transition: all ease 0.5s;
+ }
+
+ .slider-item-serviço{
+    width: 100vw;
+    background-position: center;
+  }
+
+  .slider-item-serviço img{
+    width:44vw;
+    height: 100%;
+  }
+
+
+.ver-todas-as-obras, .ver-todas-as-serviço{
+  width:100%;
+  height: 30px;
+  
+  background-color: rgb(37, 155, 163);
+  text-align: center;
+  color: white;
+
+  margin:0 auto;
+  cursor: pointer;
+  display: none;
+}
+
+.ver-todas-as-obras h2, .ver-todas-as-serviço h2{
+  font-size: 14px;
+  line-height: 30px;
+
+  margin-top: 2px;
+} 
+
+/* Slider Controles Obra*/
+
+  .slider-controls-serviço{
+    position: absolute;
+    z-index:2;
+    width: 88%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13%;
+    z-index: 99;
+
+  }
+
+  .slider-control-serviço{
+    width:35px;
+    height:35px;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 25px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .slider-control-serviço:hover{
+    background-color: rgb(37, 155, 163);
+  }
+  .slider-control-serviço img{
+    width: 20px;
+    margin: 8px 8px;
+  }
+
+
+
+  /* Sessão Sobre Nós */
+  .sessao-sobrenos{
+    width: 100%;
+    padding-top:20px;
+
+    text-align: center;    
+  }
+
+  .sessao-sobrenos h2{
+    text-align: center;
+  }
+
+  #carrossel-sobrenos{
+    padding:0px 50px ;
+    text-align: justify;
+  }
+  #ver-mais, #ver-menos{
+    display: none;
+  }
+
+/* Footer */
+footer{
+    background-color:rgb(77, 77, 77);
+    text-align: center;
+    color:white;
+
+    margin-top: 20px;
+    font-size: 8px;
+}
+
+.img-footer-redes-sociais img{
+    width: 40px;
+}
+
+footer .menu{
+    width:100%;
+}
+
+.footer-wrapper{
+ display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rede-sociais-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #rede-sociais{
+    width: 100%;
+    display:inline-block;
+}
+
+.img-footer-redes-sociais img{
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px) {
+  .slider-item-obra img{
+    width:30vw;
+  }
+
+  .slider-item-serviço img{
+    width:30vw;
+  }
+
+  .slider-controls-obra, .slider-controls-serviço{
+    width:88%;
+    margin-top: 12%;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .header{
+        height: 110px;
+    }
+    .menu{
+        display: none;
+    }
+
+    #menu-mobile{
+        display: block;
+    }
+
+    #menu-mobile-width{
+        display: block;
+        position: absolute;
+        width: 0px;
+        height: 100vw;
+        cursor: pointer;
+
+        margin-top: 88px;
+        transition: all ease 1s;
+    
+        background-color: #08626e;
+
+        right: 1px;
+
+        z-index: 2;
+
+      }
+    
+      #menu-mobile-width #nav{
+        display: none;
+      }
+   
+      #menu-mobile-width ul{
+        list-style-type: none;
+      }
+
+      #menu-mobile-width a{
+        text-decoration: none
+      }
+
+      #menu-mobile-width li{
+        width: calc(100% + 40px);
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        margin:20px -40px;
+        padding-top:8px;
+        padding-bottom:8px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      
+      #menu-mobile-width li:hover{
+        background-color: rgb(37, 155, 163);
+      }
+
+      #contato-mobile{
+        width: 100%;
+
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .mobile-icon1{
+        display: none;
+      }
+
+      .mobile-icon2{
+        display: none;
+      }
+      .mobile-icon3{
+        display: none;
+      }
+      #menu-mobile-width img{
+        width: 40px;
+        margin-top: 30px;
+     }
+
+
+    #contato-fixo{
+        margin-left: 5px;
+        margin-top: -80px;
+        width:95%;      
+        display: none;
+    }
+
+    
+    #imagemBotaoFixo{
+        margin-top: 90vh;
+    }
+
+
+
+  
+
+    #contato-fixo-contatos{
+        width: 100%;
+        margin-left: -10px;
+        margin-top: calc(100vh - 38px);
+        display: block;
+        z-index: 99999;
+    }
+
+    
+    #contato-fixo-contatos .info-contatos-fixo{
+        width: 100%;
+        height: 40px;
+        padding: 2px;
+        background-color: #40e0d0;
+    
+        border-radius: 0px;
+    }
+
+    
+    .info-contatos-fixo a img{
+        width: 30px;
+        cursor: pointer;
+    }
+    
+
+    .info-contatos-fixo, .whats{
+        width: 10px;
+        display: block;
+        margin-left: 16%;
+    }
+
+    .whats h2, .email h2, .instagram h2{
+        display: none;
+    }
+
+    .fechar{
+      display: none;
+    }
+    
+    .info-contatos-fixo, .email{
+        display: flex   ;
+        margin-left: 25%;
+    }
+    
+
+    .info-contatos-fixo .instagram{
+        margin-left: 25%;
+    }
+
+    .slider{
+        width: 100%;
+        margin-top:-22px;
+        overflow: hidden;
+    }
+    
+    .sessao-obra .titulo h2, .sessao-serviço .titulo h2{
+      font-size: 25px;
+      margin-left: 0%;
+      text-align: center;
+    }
+    .slider-controls{
+        display: none;
+    }
+
+    
+
+   /* Sessao obra, serviço, sobre nós para mobile*/
+   .slider-obra, .slider-serviço{
+    width: 70%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+  .slider-item-obra img, .slider-item-serviço img{
+    width:100vw;
+  }
+ 
+  .slider-controls-obra, .slider-controls-serviço{
+    width:68%;
+    margin-top: 20%;
+  }
+   
+  .sessao-sobrenos{
+    height: 200px;
+    overflow-y: hidden;
+  }
+      
+  #ver-mais{
+    display: block;
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgb(37, 155, 163);
+  
+    margin: 0 auto;
+  
+    font-size:10px ;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+  }
+
+  #ver-menos{
+    display: none;
+    width: 30%;
+    border-radius: 5px;
+    background-color: rgb(37, 155, 163);
+  
+    margin: 0 auto;
+  
+    font-size:10px ;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+  }
+ 
+
+@media only screen and (max-width: 425px) {
+    .header{
+        height: 78px;
+    }
+    .logo img{
+        width: 70px;
+    }
+
+    .slider{
+        width: 100%;
+        margin-top:0px;
+        overflow: hidden;
+    }
+
+
+      #menu-mobile-width{
+        display: block;
+        position: absolute;
+        width: 0px;
+        height: 100%;
+
+        margin-top: 78px;;
+      }
+    
+
+    /* Sessao obra, serviço, sobre nós para mobile*/
+   .slider-obra, .slider-serviço{
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    }
+
+    .slider-controls-obra, .slider-controls-serviço{
+        width:86%;
+        margin-top:38%;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 375px) {
+    
+  .slider-controls-obra, .slider-controls-serviço{
+    margin-top: 45%;
+  }
+}
