@@ -151,7 +151,7 @@
             </div>
             
             <div class="slider-width-serviço"> 
-                    <div class="slider-item-serviço"> <img src="./img/img-home/2.jpg" alt=""> </div>
+                    <div class="slider-item-serviço"> <img src="./img/img-home/2.png" alt=""> </div>
                     <div class="slider-item-serviço"> <img src="./img/img-home/obras-5.jpg" alt=""> </div>
                     <div class="slider-item-serviço"> <img src="./img/img-home/obras-3.jpg" alt=""> </div>
                     <div class="slider-item-serviço"> <img src="./img/img-home/obras-4.jpg" alt=""> </div>
