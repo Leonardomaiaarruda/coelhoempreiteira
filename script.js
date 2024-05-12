@@ -1,41 +1,7 @@
 window.onload=function(){
-    
-
-    function loading(){
-        document.getElementsByClassName('box-load')[0].style.display = 'none';
-        document.getElementsByClassName('content')[0].style.display = 'block';
-    }
-
-    loading()
-    
+        
     let botaoFechar = document.getElementById("fecharcontato");
     let contatoFixo =  document.getElementById('contato-fixo-contatos');
-    
-
-    botaoFechar.onclick = function () {
-        if(contatoFixo.style.display == 'none'){
-            contatoFixo.style.display = 'block';
-            document.getElementById('imagemBotaoFixo').style.display = 'none'
-        }else{
-            contatoFixo.style.display = 'none';
-            document.getElementById('imagemBotaoFixo').style.display = 'block'
-        }
-    };
-
-
-    let BF = document.getElementById('imagemBotaoFixo');
-    BF.onclick = function () {
-        let imgBotao = document.getElementById('imagemBotaoFixo')
-
-        if(imgBotao.style.display == 'none'){
-            imgBotao.style.display = 'block';
-            document.getElementById('contato-fixo-contatos').style.display = 'none'
-        }else{
-            imgBotao.style.display = 'none';
-            document.getElementById('contato-fixo-contatos').style.display = 'block'
-        }
-    };
-
 }
 
 
@@ -72,12 +38,11 @@ setInterval(goNext, 4000);
 
 
 
-/* Sessão Obra */
 let totalSlidesObra = document.querySelectorAll('.slider-item-obra').length;
 let currentSlideObra = 0;
 
 document.querySelector('.slider-width-obra').style.width = `calc(31vw * ${totalSlidesObra})`;
-document.querySelector('.slider-controls-obra').style.height = ` ${document.querySelector('.slider-obra').clientHeight}px `;
+//document.querySelector('.slider-controls-obra').style.height = ` ${document.querySelector('.slider-obra').clientHeight}vh `;
 
 window.onresize = function(event) {
     if (window.innerWidth > 1200) {
@@ -95,7 +60,6 @@ function goPrevObra(){
     currentSlideObra --;
     if(currentSlideObra < 0){
         currentSlideObra = totalSlidesObra -3;
-        console.log('o')
     }
     updateMarginObra();
 }
@@ -113,53 +77,6 @@ function updateMarginObra(){
     let newMargin = (currentSlideObra * sliderItemWidth);
     document.querySelector('.slider-width-obra').style.marginLeft = `-${newMargin}px`;  
 }
-
-
-
-
-/* Sessão Serviço */
-let totalSlidesServico = document.querySelectorAll('.slider-item-obra').length;
-let currentSlideServico = 0;
-
-document.querySelector('.slider-width-serviço').style.width = `calc(31vw * ${totalSlidesServico})`;
-document.querySelector('.slider-controls-serviço').style.height = ` ${document.querySelector('.slider-serviço').clientHeight}px `;
-
-window.onresize = function(event) {
-    if (window.innerWidth > 1200) {
-        document.querySelector('.slider-width-serviço').style.width = `calc(30vw * ${totalSlidesServico})`;
-      }
-    if (window.innerWidth < 1200) {
-      document.querySelector('.slider-width-serviço').style.width = `calc(44vw * ${totalSlidesServico})`;
-    }
-    if (window.innerWidth < 768) {
-        document.querySelector('.slider-width-serviço').style.width = `calc(100vw * ${totalSlidesServico})`;
-      }
-  };
-
-function goPrevServico(){
-    currentSlideServico --;
-    if(currentSlideServico < 0){
-        currentSlideServico = totalSlidesObra -3;
-        console.log('o')
-    }
-    updateMarginServico();
-}
-
-function goNextServico(){
-    currentSlideServico ++;
-    if(currentSlideServico > (totalSlidesObra-3)){
-        currentSlideServico = 0 ;
-    }
-    updateMarginServico();
-}
-
-function updateMarginServico(){
-    let sliderItemWidth = document.querySelector('.slider-item-serviço').clientWidth;
-    let newMargin = (currentSlideServico * sliderItemWidth);
-    document.querySelector('.slider-width-serviço').style.marginLeft = `-${newMargin}px`;  
-}
-
-
 
 
 let abrirMenu = document.getElementById('abrir');
@@ -187,23 +104,4 @@ fecharMenu.addEventListener('click', function(){
     document.querySelector('.mobile-icon3').style.display = 'none';
 })
 
-
-
-
-let verMais = document.getElementById("ver-mais")
-    verMais.addEventListener('click', function(){
-            document.getElementById("sessao-sobrenos").style.height = '100%';
-            document.getElementById("ver-mais").style.display = 'none';
-            document.getElementById("ver-menos").style.display = 'block';
-
-    });
-
-    let verMenos = document.getElementById("ver-menos")
-    verMenos.addEventListener('click', function(){
-            document.getElementById("sessao-sobrenos").style.height = '200px';
-            document.getElementById("sessao-sobrenos").style.overflowY = 'hidden';
-            document.getElementById("ver-mais").style.display = 'block';
-            document.getElementById("ver-menos").style.display = 'none';
-
-    });
 
