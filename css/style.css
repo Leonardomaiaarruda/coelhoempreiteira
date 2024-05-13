@@ -3,7 +3,7 @@ body{
     margin:0px;
     padding:0px;
     box-sizing: border-box;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto';
     overflow-x: hidden;
 }
 
@@ -465,7 +465,7 @@ footer{
     }
 
     .slider-item{
-      height: 70vh;
+      height: 80vh;
     }
 
   .sessao-obra h2{
@@ -507,8 +507,8 @@ footer{
     border-top: 10px solid transparent;
   }
 
-.barra-titulo{
-    font-size: 18px;
+.sessao-obra h2, .barra-titulo h2, .sessao-sobrenos h2 {
+    font-size: 16px;
   }
   .slider-item-servico{
     width: 95%;
@@ -523,7 +523,7 @@ footer{
   }
 
   .sessao-servico{
-    height:40vh;
+    height:70vh;
   }
 
 }
@@ -532,5 +532,17 @@ footer{
   .sessao-servico{
     height:110vh;
   }
+  .slider-item{
+    height: 70vh;
+  }
+
+
+  .sobre-nos p{
+    font-size: 15px;
+    width: 90%;
+    padding:0px 20px ;
+  }
+  
+
  
 }
