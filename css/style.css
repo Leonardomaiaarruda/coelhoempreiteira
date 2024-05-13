@@ -465,10 +465,12 @@ footer{
     }
 
     .slider-item{
-      height: 90%;
+      height: 70vh;
     }
 
-  
+  .sessao-obra h2{
+    font-size: 18px;
+  }
    .slider-obra{
       width: 100%;
     }
@@ -505,6 +507,9 @@ footer{
     border-top: 10px solid transparent;
   }
 
+.barra-titulo{
+    font-size: 18px;
+  }
   .slider-item-servico{
     width: 95%;
   }
@@ -512,9 +517,18 @@ footer{
     margin-top: -80px;
   }
 
+  .sessao-servico .titulo h2{
+    font-size: 18px;
+    color:#ffffff;
+  }
+
+  .sessao-servico{
+    height:40vh;
+  }
+
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 425px) {
   .sessao-servico{
     height:110vh;
   }
