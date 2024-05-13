@@ -32,6 +32,7 @@ header{
     display: inline-block;
     text-align: center;
     background-color: #182333;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 .menu nav ul{
@@ -392,6 +393,8 @@ footer{
 @media only screen and (max-width: 768px) {
     .header{
         height: 90px;
+        background-color: #182333;
+        border-bottom: 1px solid #FFFFFF;
     }
     .menu{
         display: none;
@@ -408,7 +411,7 @@ footer{
         cursor: pointer;
         margin-top: 88px;
         transition: all ease 1s;
-        background-color: #08626e;
+        background-color: #182333;
         right: 1px;
         z-index: 9;
 
@@ -537,7 +540,7 @@ footer{
     width: 100%;
   }
   .sessao-servico{
-    height:110vh;
+    height:85vh;
   }
   .slider-item{
     height: 60vh;
@@ -550,6 +553,10 @@ footer{
     padding:0px 20px ;
   }
   
+}
 
- 
+@media only screen and (max-width:375px) {
+  .sessao-servico{
+    height:100vh;
+  }
 }
