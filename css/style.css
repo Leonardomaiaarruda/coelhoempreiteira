@@ -375,10 +375,10 @@ header{
 
 /* Footer */
 footer{
-    background-color:rgb(77, 77, 77);
+    background-color:rgb(0, 0, 0);
     text-align: center;
     color:white;
-    font-size: 10px;
+    font-size: 12px;
     padding: 10px;
 }
 
@@ -482,14 +482,18 @@ footer{
     }
 
     .slider-width-obra{
+      width: 100vw;
       height: 200px;
       display: flex;
       transition: all ease 1s;
     }
     
-    .slider-item-obra {
-      width: 100%;
+    .slider-item-obra img{
+      width:100vw;
+      height: 100%;
+      margin-left: -9px;
     }
+ 
  
   .slider-controls-obra{
     width:100%;
