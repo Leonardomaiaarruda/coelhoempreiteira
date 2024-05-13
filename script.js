@@ -1,11 +1,3 @@
-window.onload=function(){
-        
-    let botaoFechar = document.getElementById("fecharcontato");
-    let contatoFixo =  document.getElementById('contato-fixo-contatos');
-}
-
-
-    
 let totalSlides = document.querySelectorAll('.slider-item').length;
 let currentSlide = 0;
 
@@ -62,7 +54,7 @@ function goPrevObra(){
         currentSlideObra = totalSlidesObra -3;
     }
     updateMarginObra();
-}
+};
 
 function goNextObra(){
     currentSlideObra ++;
@@ -70,13 +62,13 @@ function goNextObra(){
         currentSlideObra = 0 ;
     }
     updateMarginObra();
-}
+};
 
 function updateMarginObra(){
     let sliderItemWidth = document.querySelector('.slider-item-obra').clientWidth;
     let newMargin = (currentSlideObra * sliderItemWidth);
     document.querySelector('.slider-width-obra').style.marginLeft = `-${newMargin}px`;  
-}
+};
 
 
 let abrirMenu = document.getElementById('abrir');
@@ -84,12 +76,9 @@ let abrirMenu = document.getElementById('abrir');
 abrirMenu.addEventListener('click', function(){
     document.getElementById('abrir').style.display = 'none'
     document.getElementById('fechar').style.display = 'block'
-    document.getElementById('menu-mobile-width').style.width = '100%';
+    document.getElementById('menu-mobile-width').style.width = '50%';
     document.getElementById('nav').style.display = 'block';
-    document.querySelector('.mobile-icon1').style.display = 'block';
-    document.querySelector('.mobile-icon2').style.display = 'block';
-    document.querySelector('.mobile-icon3').style.display = 'block';
-})
+});
 
 
 let fecharMenu = document.getElementById('fechar');
@@ -99,9 +88,4 @@ fecharMenu.addEventListener('click', function(){
     document.getElementById('fechar').style.display = 'none'
     document.getElementById('menu-mobile-width').style.width = '0%';  
     document.getElementById('nav').style.display = 'none';  
-    document.querySelector('.mobile-icon1').style.display = 'none';
-    document.querySelector('.mobile-icon2').style.display = 'none';
-    document.querySelector('.mobile-icon3').style.display = 'none';
-})
-
-
+});
