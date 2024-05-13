@@ -27,11 +27,6 @@
                         <a href="#"><li>SOBRE NÓS</li></a>
                     </ul>
                 </nav>
-               <div id="contato-mobile">
-                <img class="mobile-icon1" src="./img/img-utilitarils/whats.png" alt="">
-                <img class="mobile-icon2" src="./img/img-utilitarils/logo-email.png" alt="">
-                <img class="mobile-icon3" src="./img/img-utilitarils/logo-instagram.png" alt="">
-               </div>
             </div>
 
             <div class = wrapper>

@@ -213,7 +213,7 @@ header{
   }
 
  .slider-obra{
-    width: 100%;
+    width: 90%;
     overflow: hidden;
     margin:0 auto;
   }
@@ -247,11 +247,13 @@ header{
 
   .slider-controls-obra{
     position: absolute;
-    width: 98%;
-    margin-left: 1%;
+    width: 100%;
+    margin-left: -4.5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-top: 125px;
   }
 
   .slider-control-obra{
@@ -273,7 +275,7 @@ header{
 
   .sessao-servico{
     width: 100%;
-    height: 100vh;
+    height:100vh;
     background-color:#9e9e9e;   
   }
 
@@ -386,7 +388,7 @@ footer{
 
 @media only screen and (max-width: 768px) {
     .header{
-        height: 110px;
+        height: 90px;
     }
     .menu{
         display: none;
@@ -400,17 +402,12 @@ footer{
         display: block;
         position: absolute;
         width: 0px;
-        height: 100vw;
         cursor: pointer;
-
         margin-top: 88px;
         transition: all ease 1s;
-    
         background-color: #08626e;
-
         right: 1px;
-
-        z-index: 2;
+        z-index: 9;
 
       }
     
@@ -442,14 +439,6 @@ footer{
         background-color: rgb(37, 155, 163);
       }
 
-      #contato-mobile{
-        width: 100%;
-
-        margin: auto;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-      }
       .mobile-icon1{
         display: none;
       }
@@ -471,35 +460,63 @@ footer{
       display: none;
     }
 
-    .slider{
-        width: 100%;
-        margin-top:-22px;
-        overflow: hidden;
+   .slider-controls{
+      display: none;
+    }
+
+    .slider-item{
+      height: 90%;
+    }
+
+  
+   .slider-obra{
+      width: 100%;
+    }
+
+    .slider-width-obra{
+      height: 200px;
+      display: flex;
+      transition: all ease 1s;
     }
     
-    .slider-item-servico{
-      width: 95%;
+    .slider-item-obra {
+      width: 100%;
     }
+ 
+  .slider-controls-obra{
+    width:100%;
+  }
 
-   /* Sessao obra, serviço, sobre nós para mobile*/
-   .slider-obra, .slider-serviço{
-    width: 70%;
-    overflow: hidden;
-    margin: 0 auto;
+  .slider-controls-obra{
+    position: absolute;
+    width: 100%;
+    margin-left: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 90px;
+  }
+
+  .slider-control-obra{
+    border-right: 10px solid transparent;
+    border-left: 28px solid rgb(225, 225, 225);
+    border-bottom: 15px solid transparent;
+    border-top: 10px solid transparent;
+  }
+
+  .slider-item-servico{
+    width: 95%;
+  }
+  .slider-servico{
+    margin-top: -80px;
+  }
+
 }
 
-  .slider-item-obra img, .slider-item-serviço img{
-    width:100vw;
+@media only screen and (max-width: 320px) {
+  .sessao-servico{
+    height:110vh;
   }
  
-  .slider-controls-obra, .slider-controls-serviço{
-    width:68%;
-    margin-top: 20%;
-  }
-}
-
-@media only screen and (max-width: 390px) {
-  .sessao-servico{
-    height: calc(100vh + 100px);
-  } 
 }
