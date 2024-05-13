@@ -98,14 +98,17 @@ header{
 
 /*  Contato Fixo na lateral direito na borda de baixo  */
 #contato-fixo{
-    width: 94%;
-    position: fixed;
-    margin-top: calc(100vh - 155px);
+    width: 80px;
+    position: absolute;
+    right: 20px;
+    bottom: 150px;
     z-index: 999;
+    background-color: red;
 }
 
 #contato-fixo .center{
     text-align: right;
+    position: fixed;
 }
 
 #fechar{
@@ -529,11 +532,15 @@ footer{
 }
 
 @media only screen and (max-width: 425px) {
+  body{
+    background-color:#182333;
+    width: 100%;
+  }
   .sessao-servico{
     height:110vh;
   }
   .slider-item{
-    height: 70vh;
+    height: 60vh;
   }
 
 
