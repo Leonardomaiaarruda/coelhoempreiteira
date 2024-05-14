@@ -22,16 +22,16 @@
             <div id="menu-mobile-width">
                 <nav id="nav">
                     <ul>
-                        <a href="#"><li>HOME</li></a>
-                        <a href="#"><li>NOSSOS SERVIÇOS</li></a>
-                        <a href="#"><li>OBRAS REALIZADAS</li></a>
-                        <a href="#"><li>SOBRE NÓS</li></a>
+                        <a href="#menu"><li>HOME</li></a>
+                        <a href="#sessao-obra"><li>OBRAS REALIZADAS</li></a>
+                        <a href="#barra-titulo"><li>NOSSOS SERVIÇOS</li></a>
+                        <a href="#sessao-sobrenos"><li>SOBRE NÓS</li></a>
                     </ul>
                 </nav>
             </div>
 
             <div class = wrapper>
-                <div class ="menu">
+                <div class ="menu" id="#menu">
                     <nav>
                         <ul>
                             <a href="#"><li>HOME</li></a>
@@ -70,7 +70,7 @@
             </div>
     </header>
 
-    <section class="sessao-obra">
+    <section class="sessao-obra" id="sessao-obra">
         <h2>OBRAS CONCLUIDAS</h2>
         <div class="slider-obra">
             <div class="slider-controls-obra">
@@ -79,12 +79,12 @@
             </div>
             
             <div class="slider-width-obra"> 
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/LAZARO.jpg" alt=""> </div>
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/MONTE.jpg" alt=""> </div>
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/RIVIERA.jpg" alt=""> </div>
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/BAHAMAS.png" alt=""> </div>
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/BOTANICO.png" alt=""> </div>
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/VITÓRIA.png" alt=""> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/LAZARO.jpg"> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/MONTE.jpg"> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/RIVIERA.jpg"> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/BAHAMAS.png"> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/BOTANICO.png"> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/VITÓRIA.png"> </div>
             </div>
 
         </div>
@@ -95,7 +95,7 @@
     <section class="sessao-servico">
         <div class="slider-servico">  
             <div class="titulo">  
-                <div class="barra-titulo">
+                <div class="barra-titulo" id="barra-titulo">
                     <h2> NOSSOS SERVIÇOS</h2>
                     <p></p>
                 </div>
@@ -116,7 +116,7 @@
 
 
     <section class="sessao-sobrenos">
-        <div class="titulo">
+        <div class="titulo"  id="sessao-sobrenos">
             <h2> SOBRE NÓS</h2>
         </div>
         <div id="carrossel-sobrenos">
@@ -136,7 +136,6 @@
                         Confira nosso portfólio de apresentação em anexo.
                         Portfolio - Coelho Empreiteira.pdf
                         Esperamos poder fazer parte do seu próximo quadro de concorrência e contar com sua preferência.
-
                     </p>
               </div>
               <div class="sobre-nos-img">
@@ -146,7 +145,7 @@
     </section>
 
     <footer>
-        <div><h2> COPYRIGHT © 2024 COELHO EMPREITEIRA TODOS OS DIREITOS RESERVADOS. </h2></div>
+        <div><p> COPYRIGHT © 2024 COELHO EMPREITEIRA TODOS OS DIREITOS RESERVADOS. </p></div>
     </footer>
 
    </div>
