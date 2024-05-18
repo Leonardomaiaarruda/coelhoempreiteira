@@ -3,7 +3,7 @@ body{
   margin:0px;
   padding:0px;
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: sans-serif;
   overflow-x: hidden;
 }
 
@@ -55,6 +55,7 @@ header{
   padding: 5px;
   border: 1px solid transparent;
   font-weight: 900;
+  font-family: 'Roboto';
 }
 
 .menu li:hover{
@@ -325,7 +326,6 @@ display: none;
 .slider-item-servico h2{
   text-align: left;
   padding-left: 10px;
-  font-family: Arial, Helvetica, sans-serif;
   color: rgb(37, 154, 172);
   font-size: 20px;
 }
@@ -415,7 +415,7 @@ body{
       cursor: pointer;
       margin-top: 91px;
       transition: all ease 1s;
-      background-color: #182333;
+      background-color: rgba(18, 23, 33, 0.8);
       left:0px;
   }
   
@@ -443,7 +443,7 @@ body{
     }
 
     #menu-mobile-width li:hover{
-      background-color: rgb(18, 23, 33);
+      background-color: rgba(152, 152, 154, 0.8);
     }
 
   .fechar{
@@ -518,6 +518,9 @@ body{
   height:50vh;
 }
 
+footer{
+  font-size: 8px;
+}
 }
 
 @media only screen and (max-width: 425px) {
@@ -526,7 +529,6 @@ body{
 }
 
 .sobre-nos p{
-  font-size: 15px;
   width: 90%;
   padding:0px 20px ;
 }

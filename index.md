@@ -15,14 +15,14 @@
     <header>
         <section class="header">
             <div id="menu-mobile">
-                <img id="abrir" src="./img/img-utilitarils/menu.png" alt="">
-                <img id="fechar" src="./img/img-utilitarils/icon-fechar.png" alt="">
+                <img id="abrir" src="./img/img-utilitarils/icon-open.png" alt="">
+                <img id="fechar" src="./img/img-utilitarils/icon-close.png" alt="">
             </div>
 
             <div id="menu-mobile-width">
                 <nav id="nav">
                     <ul>
-                        <a href="#menu"><li>HOME</li></a>
+                        <a href="#slide-home"><li>HOME</li></a>
                         <a href="#sessao-obra"><li>OBRAS REALIZADAS</li></a>
                         <a href="#barra-titulo"><li>NOSSOS SERVIÇOS</li></a>
                         <a href="#sessao-sobrenos"><li>SOBRE NÓS</li></a>
@@ -31,13 +31,13 @@
             </div>
 
             <div class = wrapper>
-                <div class ="menu" id="#menu">
+                <div class ="menu" id="menu">
                     <nav>
                         <ul>
-                            <a href="#"><li>HOME</li></a>
-                            <a href="#"><li>NOSSOS SERVIÇOS</li></a>
-                            <a href="#"><li>OBRAS REALIZADAS</li></a>
-                            <a href="#"><li>SOBRE NÓS</li></a>
+                            <a href="#slide-home"><li>HOME</li></a>
+                            <a href="#sessao-obra"><li>OBRAS REALIZADAS</li></a>
+                            <a href="#barra-titulo"><li>NOSSOS SERVIÇOS</li></a>
+                            <a href="#sessao-sobrenos"><li>SOBRE NÓS</li></a>
                         </ul>
                     </nav>
                 </div>
@@ -54,7 +54,7 @@
         </section>
 
 
-            <div class="slider">
+            <div class="slider" id="slide-home">
                 <div class="slider-controls">
                     <div class="slider-control" onclick="goPrev()"> </div>
                     <div class="slider-control" onclick="goNext()"> </div>
@@ -79,12 +79,12 @@
             </div>
             
             <div class="slider-width-obra"> 
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/LAZARO.jpg"> </div>
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/MONTE.jpg"> </div>
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/RIVIERA.jpg"> </div>
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/BAHAMAS.png"> </div>
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/BOTANICO.png"> </div>
-                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/VITÓRIA.png"> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/LAZARO.jpg" alt=""> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/MONTE.jpg" alt=""> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/RIVIERA.jpg" alt=""> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/BAHAMAS.png" alt=""> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/BOTANICO.png" alt=""> </div>
+                <div class="slider-item-obra"> <img src="./img/img-sessao-obras/VITÓRIA.png" alt=""> </div>
             </div>
 
         </div>
@@ -145,7 +145,7 @@
     </section>
 
     <footer>
-        <div><p> COPYRIGHT © 2024 COELHO EMPREITEIRA TODOS OS DIREITOS RESERVADOS. </p></div>
+        <div><h2> COPYRIGHT © 2024 COELHO EMPREITEIRA TODOS OS DIREITOS RESERVADOS. </h2></div>
     </footer>
 
    </div>
